@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 using TMPro;
 using UnityEngine;
 
-public class Main : MonoBehaviour
+public class BranchTest : MonoBehaviour
 {
     public TextMeshProUGUI ResultText;
 
@@ -52,6 +52,8 @@ public class Main : MonoBehaviour
 
         double time = 0.0d;
 
+        GC.Collect(); GC.WaitForPendingFinalizers(); GC.Collect();
+
         for (int t = 0; t < NumIterations; t++)
         {
             time = Time.realtimeSinceStartupAsDouble;
@@ -95,7 +97,6 @@ public class Main : MonoBehaviour
             }
             arrayTimeRandom += Time.realtimeSinceStartupAsDouble - time;
 
-            GC.Collect(); GC.WaitForPendingFinalizers(); GC.Collect();
         }
 
         ResultText.text = "";

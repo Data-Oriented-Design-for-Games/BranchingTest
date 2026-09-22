@@ -664,7 +664,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1890228682}
-        m_TargetAssemblyTypeName: Main, Assembly-CSharp
+        m_TargetAssemblyTypeName: BranchTest, Assembly-CSharp
         m_MethodName: RunTest
         m_Mode: 1
         m_Arguments:
@@ -803,7 +803,7 @@ GameObject:
   - component: {fileID: 1890228683}
   - component: {fileID: 1890228682}
   m_Layer: 0
-  m_Name: Main
+  m_Name: BranchTest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
